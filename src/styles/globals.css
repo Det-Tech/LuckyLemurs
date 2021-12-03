@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Dimbo";
+  src: url("/font/Dimbo Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+.main-content {
+  height: calc(100vh - 6rem) !important;
+  width: 100% !important;
+}
+
+.child-content {
+  height: calc(45vh) !important;
+}
+
+.text-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+@media (max-width: 1440px) {
+  .content {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .sub-title {
+    font-size: 2.5rem !important;
+  }
+
+  .sub-content {
+    padding: 1rem !important;
+  }
+
+  .rarity-title {
+    font-size: 1.2rem !important;
+  }
+}
